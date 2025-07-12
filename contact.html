@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Dalitso Zulu</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <nav class="bg-white shadow p-4 flex justify-between">
+    <div class="font-bold text-xl">Dalitso Zulu</div>
+    <div class="space-x-4">
+      <a href="index.html" class="hover:text-blue-500">Home</a>
+      <a href="about.html" class="hover:text-blue-500">About</a>
+      <a href="projects.html" class="hover:text-blue-500">Projects</a>
+      <a href="contact.html" class="hover:text-blue-500">Contact</a>
+    </div>
+  </nav>
+  <main class="max-w-4xl mx-auto mt-10 p-4">
+    <h1 class="text-4xl font-bold mb-8 text-center text-gray-800">Get In Touch</h1>
+    
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Contact Form -->
+      <div class="bg-white rounded-lg shadow-lg p-6">
+        <h2 class="text-2xl font-bold mb-6 text-gray-800">Send Me a Message</h2>
+        <form action="https://formspree.io/f/xpzgwqzg" method="POST" class="space-y-4" id="contactForm">
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+            <input type="text" id="name" name="name" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+            <input type="email" id="email" name="email" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+          </div>
+          <div>
+            <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+            <input type="text" id="subject" name="subject" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+            <textarea id="message" name="message" rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required></textarea>
+          </div>
+          <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300 font-medium" id="submitBtn">
+            <span id="btnText">Send Message</span>
+            <span id="btnLoading" class="hidden">Sending...</span>
+          </button>
+        </form>
+        
+        <!-- Success/Error Messages -->
+        <div id="successMessage" class="hidden mt-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded">
+          Thank you! Your message has been sent successfully. I'll get back to you soon!
+        </div>
+        <div id="errorMessage" class="hidden mt-4 p-4 bg-red-100 border border-red-400 text-red-700 rounded">
+          Sorry, there was an error sending your message. Please try again or 
+          <a href="mailto:zuludalitso40@gmail.com?subject=Contact from Portfolio" class="underline font-semibold">contact me directly via email</a>.
+        </div>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="bg-white rounded-lg shadow-lg p-6">
+        <h2 class="text-2xl font-bold mb-6 text-gray-800">Contact Information</h2>
+        <div class="space-y-4">
+          <div class="flex items-center">
+            <span class="text-blue-500 mr-3 text-xl">📧</span>
+            <div>
+              <p class="font-semibold text-gray-800">Email</p>
+              <p class="text-gray-600">zuludalitso40@gmail.com</p>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <span class="text-blue-500 mr-3 text-xl">📱</span>
+            <div>
+              <p class="font-semibold text-gray-800">Phone</p>
+              <p class="text-gray-600">0978943880 / 0981486164</p>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <span class="text-blue-500 mr-3 text-xl">📍</span>
+            <div>
+              <p class="font-semibold text-gray-800">Location</p>
+              <p class="text-gray-600">Lusaka, Zambia</p>
+              <p class="text-gray-500 text-sm">Available for physical employment & remote work worldwide</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8">
+          <h3 class="text-xl font-bold mb-4 text-gray-800">Connect With Me</h3>
+          <div class="flex space-x-4">
+            <a href="#" class="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition duration-300">
+              <span class="text-xl">💼</span>
+            </a>
+            <a href="#" class="bg-gray-800 text-white p-3 rounded-full hover:bg-gray-900 transition duration-300">
+              <span class="text-xl">🐙</span>
+            </a>
+            <a href="#" class="bg-blue-400 text-white p-3 rounded-full hover:bg-blue-500 transition duration-300">
+              <span class="text-xl">🐦</span>
+            </a>
+            <a href="#" class="bg-red-600 text-white p-3 rounded-full hover:bg-red-700 transition duration-300">
+              <span class="text-xl">📺</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-12 text-center">
+      <p class="text-gray-600 mb-4">I'm always open to discussing new opportunities, collaborations, or just having a chat about technology!</p>
+      <a href="projects.html" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-300 inline-block">View My Projects</a>
+    </div>
+  </main>
+  <script src="assets/js/main.js"></script>
+</body>
+</html> 

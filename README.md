@@ -1,6 +1,6 @@
 # Dalitso Zulu Portfolio
 
-This is a personal portfolio website hosted on GitHub Pages using GitHub.io. It showcases projects, skills, and contact information.
+This is a personal portfolio website hosted on GitHub Pages using GitHub.io. It showcases some of proffessional projects, skills, and contact information.
 
 ## Features
 - Responsive design with Tailwind CSS (via CDN)
